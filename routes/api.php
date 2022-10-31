@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\HTTP\Controller\HeloController;
 use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\BookController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,3 +32,7 @@ Route::get('hello', function(){
 //Route::put('haloController', [HeloController::class,update]);
 //Route::detele('haloController', [HeloController::class,destroy]);
 Route::resource('HalController', HeloController :: class);
+Route::resource('siswa', SiswaController::class);
+
+Route::resource('books', BookController::class);
+
