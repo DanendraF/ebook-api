@@ -32,10 +32,11 @@ Route::get('hello', function(){
 //Route::get('haloController', [HeloController::class,show]);
 //Route::put('haloController', [HeloController::class,update]);
 //Route::detele('haloController', [HeloController::class,destroy]);
-Route::resource('HalController', HeloController :: class);
-Route::resource('siswa', SiswaController::class);
 
-Route::resource('books', BookController::class);
+Route::resource('HalController', HeloController :: class);
+
+//Route::resource('siswa', SiswaController::class);
+//Route::resource('books', BookController::class);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
